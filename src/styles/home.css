@@ -1,0 +1,141 @@
+
+
+/* ======================================== HOME SECTIONS ======================================== */
+
+.home-section {
+    display: flex;
+    padding-bottom: 3rem;
+    padding-left: 10.5rem;
+
+    justify-content: space-between;
+}
+
+.home-section .intro-div {
+    display: flex;
+    flex-direction: column;
+    padding-top: 5rem;
+    gap: 2.55rem;
+    width: 40%;
+    height: auto;
+}
+
+.home-section .img-div {
+    height: auto;
+    padding-top: 2.5rem;
+    margin-right: 3rem;
+}
+
+.home-section .links-div {
+    width: 5rem;
+    height: 12rem;
+    margin-top: 15rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    background-color: #2e365c;
+    border-radius: 2rem;
+
+    border-color: #121629;
+    padding: 1rem 1rem;
+    box-shadow: 0 1.25rem 1.875rem #121629;
+}
+
+/* ======================================== HOME SECTIONS END ======================================== */
+
+
+/* ======================================== HOME PIC ======================================== */
+
+.img-div .home-img {
+    height: 35rem;
+    z-index: 1;
+    filter: drop-shadow(1rem 1rem 1rem #121629cc);
+
+    transition: left 0.5s ease, transform 0.5s ease;
+}
+
+/* ======================================== HOME PIC END ======================================== */
+
+
+/* ======================================= HOME LINKS ======================================== */
+
+.links-div a {
+  margin: 0 1rem;
+  color: #eebbc3;
+  transition: color 0.3s;
+}
+
+.links-div a:hover {
+  color: #fffffe;
+}
+
+/* ======================================= HOME LINKS END ======================================== */
+
+
+/* ======================================= HOME BUTTON ======================================== */
+
+.home-button {
+    max-width: 15rem;
+    padding: 1rem 3rem;
+    cursor: pointer;
+
+    color: #232946;
+    background: #eebbc3;
+    border: none;
+    border-radius: 1.563rem;
+    box-shadow: 0 1.25rem 1.875rem #121629;
+
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+    font-size: 1.6rem;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.home-button:hover {
+    background: #121629;
+    color: #b8c1ec;
+}
+
+/* ======================================= HOME BUTTON END ======================================== */
+
+
+/* ======================================= Responsive ======================================= */
+
+@media (max-width: 1400px) {
+
+    .home-section {
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0rem;
+    }
+
+    .home-section .intro-div {
+        padding-top: 5rem;
+        width: 80%;
+        height: auto;
+    }
+
+    .home-section .img-div {
+        padding-top: 5rem;
+        margin-right: 0rem;
+    }
+
+    .intro-div .home-button-div {
+        align-self: center;
+    }
+
+    .home-section .links-div {
+        width: 12rem;
+        height: 5rem;
+        margin-top: 2rem;
+
+        flex-direction: row;
+    }
+
+    .img-div .home-img {
+        height: 30rem;
+    }
+
+}

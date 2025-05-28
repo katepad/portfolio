@@ -1,0 +1,97 @@
+/* ======================================== BASIC GLOBAL ELEMENTS ======================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    background-color: #232946;
+}
+
+/* horizontal line */
+hr {
+    border: none;
+    width: 5rem;
+    height: 0.3rem;
+    background-color: #b8c1ec;
+    border-radius: 25px;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+/* ======================================== BASIC GLOBAL ELEMENTS ======================================== */
+
+
+/* ======================================== SCROLL BAR ELEMENTS ======================================== */
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background: #fffffe;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #eebbc3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #eebbc38c;
+}
+
+/* ======================================== SCROLL BAR ELEMENTS END ======================================== */
+
+
+/* ======================================== COLORS AND HEADING PRESETS ======================================== */
+
+.page-h1 {
+    font-family: "Fjalla One", sans-serif;
+    font-size: 3.1rem;
+    font-weight: 700;
+}
+
+.page-h2 {
+    font-family: "Inter", sans-serif;
+    font-size: 1.6rem;
+    font-weight: 700; /* Semi-Bold */
+}
+
+.page-p {
+    font-family: "Inter", sans-serif;
+    font-size: 1.35rem;
+    line-height: 1.5;
+}
+
+/* use this to make text white */
+.color-white {
+    color: #fffffe;
+}
+
+/* use this to make text pink */
+.color-pink {
+    color: #eebbc3;
+}
+
+/* use this to make text light blue */
+.color-lightblue {
+    color: #b8c1ec;
+}
+
+/* use this to make a section a lighter blue */
+.section-lightblue {
+    background: #2e365c;
+    width: 100%;
+}
+
+/* use this to make a section red - testing purposes only! */
+.section-red {
+    background: red;
+    width: 100%;
+}
+
+/* ======================================== END OF COLORS AND HEADING PRESETS ======================================== */
