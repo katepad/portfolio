@@ -1,0 +1,9 @@
+.about-section {
+    padding: 5rem 10rem;
+}
+
+.about-section .about-me-div {
+    border-radius: 25px;
+    box-shadow: 0 1.25rem 1.875rem #121629;
+    padding: 3rem 4rem;
+}

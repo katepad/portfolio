@@ -88,6 +88,12 @@ hr {
     width: 100%;
 }
 
+/* use this to make a section a darker blue */
+.section-darkblue {
+    background: #232946;
+    width: 100%;
+}
+
 /* use this to make a section red - testing purposes only! */
 .section-red {
     background: red;
