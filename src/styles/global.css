@@ -82,6 +82,17 @@ hr {
     color: #b8c1ec;
 }
 
+/* use this for links */
+.bold-recolor {
+    color: #fffffe;
+    font-weight: bolder;
+}
+
+/* get rid of underline for links in paragraph text*/
+p a {
+    text-decoration: none;
+}
+
 /* use this to make a section a lighter blue */
 .section-lightblue {
     background: #2e365c;
