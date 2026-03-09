@@ -23,7 +23,6 @@ const Navbar: React.FC = () => {
 
         {/* Links */}
         <div className={`navbar-links ${isOpen ? 'active' : ''}`}>
-          <a href="#about">About Me</a>
           <a href="#skills">Skills</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Connect</a>

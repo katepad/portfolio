@@ -15,9 +15,9 @@ const About: React.FC = () => {
         <div className='about-me-div section-darkblue'>
           <h1 className = 'page-h1 color-white'> About Me </h1>
           <hr/> <br/>
-          <p className='page-p color-lightblue'> Some of my biggest passions and gateways into computer science is game and website development. As a Computer Information Systems graduate, I’ve also developed a strong appreciation for the intersection of business and technology. </p>
+          <p className='page-p color-lightblue'> Some of my biggest passions and gateways into computer science was game and website development. As a Computer Information Systems graduate, I’ve also developed a strong appreciation for the intersection of business and technology. </p>
           <br/>
-          <p className='page-p color-lightblue'> Outside of computer science, I love dancing, video games, graphic design, and digital media creation. I also have an interest in fashion and love exploring new cuisines and food experiences. </p>
+          <p className='page-p color-lightblue'> Outside of computer science I love dancing, video games, graphic design, and digital media creation. I also have an interest in fashion and love exploring new cuisines and food experiences. </p>
         </div>
       </div>
 

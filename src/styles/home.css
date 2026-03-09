@@ -4,138 +4,134 @@
 
 .home-section {
     display: flex;
-    padding-bottom: 3rem;
-    padding-left: 10.5rem;
+    background-image: url("../assets/homeBg.png");
+    background-repeat: no-repeat; /* Prevents the image from tiling */
+    background-size: cover;       /* Scales the image to cover the entire element while preserving its aspect ratio */
+    background-position: center;  /* Centers the image within the element */
 
-    justify-content: space-between;
+    justify-content: center;
+    padding: 5rem 0rem 0rem 0rem;
 }
 
 .home-section .intro-div {
     display: flex;
     flex-direction: column;
-    padding-top: 5rem;
-    gap: 2.55rem;
-    width: 40%;
-    height: auto;
+
+    gap: 2.5rem;
+    padding: 3rem;
+    margin:1rem;
+
+    width: 45%;
+    height: 500px;
+
+    background: linear-gradient(135deg,rgba(204, 51, 102, 0.3) 75%, rgba(255, 204, 204, 0.3) 100%);
+    background: linear-gradient(135deg,rgba(69, 110, 26, 0.3) 0%, rgba(139, 158, 106, 0.3) 100%);
+    backdrop-filter: blur(0.25rem);
+    -webkit-backdrop-filter: blur(10px); /* for older browser compatibility */
+    border-radius: 1rem;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+
+    animation-name: slideDown;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
+
+    transition: all 0.5s ease-out;
+}
+
+.home-section .intro-div:hover {
+    scale: 100.3%;
+    box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
+}
+
+.home-section .links-div {
+    width: 12rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    border-radius: 2rem;
 }
 
 .home-section .img-div {
     height: auto;
-    padding-top: 2.5rem;
-    margin-right: 3rem;
+    animation-name: slideDown;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-out;
 }
 
-.home-section .links-div {
-    width: 5rem;
-    height: 12rem;
-    margin-top: 15rem;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    background-color: #2e365c;
-    border-radius: 2rem;
-
-    border-color: #121629;
-    padding: 1rem 1rem;
-    box-shadow: 0 1.25rem 1.875rem #121629;
+.recolor {
+    color: var(--primary-color);
 }
 
 /* ======================================== HOME SECTIONS END ======================================== */
 
 
-/* ======================================== HOME PIC ======================================== */
+/* ======================================== HOME IMAGES ======================================== */
 
 .img-div .home-img {
     height: 35rem;
     z-index: 1;
-    filter: drop-shadow(1rem 1rem 1rem #121629cc);
-
-    transition: left 0.5s ease, transform 0.5s ease;
 }
 
-/* ======================================== HOME PIC END ======================================== */
+.lily-img-1 {
+    position: relative;
+    right: 13rem;
+    top: 28rem;
+    width: 0px;
+    height: 0px;
+    z-index: 2;
+}
+
+.lily-img-1 img {
+    height: 20rem;
+}
+
+/* ======================================== HOME IMAGES END ======================================== */
 
 
 /* ======================================= HOME LINKS ======================================== */
 
 .links-div a {
   margin: 0 1rem;
-  color: #eebbc3;
+  color: var(--primary-color);
   transition: color 0.3s;
 }
 
 .links-div a:hover {
-  color: #fffffe;
+  color: var(--primary-color-lighter);
 }
 
 /* ======================================= HOME LINKS END ======================================== */
 
 
-/* ======================================= HOME BUTTON ======================================== */
-
-.home-button {
-    max-width: 15rem;
-    padding: 1rem 3rem;
-    cursor: pointer;
-
-    color: #232946;
-    background: #eebbc3;
-    border: none;
-    border-radius: 1.563rem;
-    box-shadow: 0 1.25rem 1.875rem #121629;
-
-    font-family: "Inter", sans-serif;
-    font-weight: bold;
-    font-size: 1.6rem;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-.home-button:hover {
-    background: #121629;
-    color: #b8c1ec;
-}
-
-/* ======================================= HOME BUTTON END ======================================== */
-
-
 /* ======================================= Responsive ======================================= */
 
-@media (max-width: 1400px) {
+@media (max-width: 1420px) {
 
     .home-section {
         flex-direction: column;
         align-items: center;
-        padding-left: 0rem;
     }
 
-    .home-section .intro-div {
-        padding-top: 5rem;
-        width: 80%;
+    .home-section .intro-div{
+        width:auto;
         height: auto;
     }
 
     .home-section .img-div {
-        padding-top: 5rem;
         margin-right: 0rem;
-    }
-
-    .intro-div .home-button-div {
-        align-self: center;
     }
 
     .home-section .links-div {
         width: 12rem;
         height: 5rem;
-        margin-top: 2rem;
 
         flex-direction: row;
     }
 
-    .img-div .home-img {
-        height: 30rem;
+    .lily-img-1 {
+        display: none;
     }
 
 }

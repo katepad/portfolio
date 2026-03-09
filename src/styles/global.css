@@ -1,3 +1,15 @@
+:root {
+    --primary-color: #cc3366;
+    --primary-color-light: #ffcccc;
+    --primary-color-lighter: #ffeded;
+    --secondary-color: #456e1a;
+    --secondary-color-light: #8b9e6a;
+    --secondary-color-lighter: #DDDBCB;
+
+    --primary-font: "Bricolage Grotesque", sans-serif;
+    --secondary-font: "Lato", sans-serif;
+}
+
 /* ======================================== BASIC GLOBAL ELEMENTS ======================================== */
 
 * {
@@ -9,7 +21,7 @@
 html {
     scroll-behavior: smooth;
     overflow-x: hidden;
-    background-color: #232946;
+    background-color: var(--primary-color-lighter);
 }
 
 /* horizontal line */
@@ -17,13 +29,32 @@ hr {
     border: none;
     width: 5rem;
     height: 0.3rem;
-    background-color: #b8c1ec;
+    background-color: var(--primary-color-lighter);
     border-radius: 25px;
     margin-bottom: 1rem;
     margin-top: 1rem;
 }
 
 /* ======================================== BASIC GLOBAL ELEMENTS ======================================== */
+
+
+/* ======================================== GLOBAL ANIMATIONS ======================================== */
+
+.tilt-1 {
+    transform: rotate(-20deg);
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(-25px); /* Start at the original position */
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px); /* Move 200px to the right */
+    opacity: 100%;
+  }
+}
+/* ======================================== GLOBAL ANIMATIONS ======================================== */
 
 
 /* ======================================== SCROLL BAR ELEMENTS ======================================== */
@@ -33,15 +64,15 @@ hr {
 }
 
 ::-webkit-scrollbar-track {
-    background: #fffffe;
+    background: #ffeded;
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #eebbc3;
+    background: #ffcccc;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #eebbc38c;
+    background: #ffcccc8c;
 }
 
 /* ======================================== SCROLL BAR ELEMENTS END ======================================== */
@@ -49,66 +80,26 @@ hr {
 
 /* ======================================== COLORS AND HEADING PRESETS ======================================== */
 
-.page-h1 {
-    font-family: "Fjalla One", sans-serif;
-    font-size: 3.1rem;
-    font-weight: 700;
-}
-
-.page-h2 {
-    font-family: "Inter", sans-serif;
-    font-size: 1.6rem;
-    font-weight: 700; /* Semi-Bold */
-}
-
-.page-p {
-    font-family: "Inter", sans-serif;
-    font-size: 1.35rem;
-    line-height: 1.5;
-}
-
-/* use this to make text white */
-.color-white {
-    color: #fffffe;
-}
-
-/* use this to make text pink */
-.color-pink {
-    color: #eebbc3;
-}
-
-/* use this to make text light blue */
-.color-lightblue {
-    color: #b8c1ec;
-}
-
-/* use this for links */
-.bold-recolor {
-    color: #fffffe;
+h1 {
+    font-family: var(--primary-font);
+    font-size: 2.5rem;
     font-weight: bolder;
+    color: white;
 }
 
-/* get rid of underline for links in paragraph text*/
-p a {
+h2 {
+    font-family: var(--secondary-font);
+    font-size: 1.5rem;
+    font-weight: 600; /* Semi-Bold */
+    color: white;
+}
+
+p {
+    font-family: var(--secondary-font);
+    font-size: 1.25rem;
+    line-height: 1.5;
     text-decoration: none;
-}
-
-/* use this to make a section a lighter blue */
-.section-lightblue {
-    background: #2e365c;
-    width: 100%;
-}
-
-/* use this to make a section a darker blue */
-.section-darkblue {
-    background: #232946;
-    width: 100%;
-}
-
-/* use this to make a section red - testing purposes only! */
-.section-red {
-    background: red;
-    width: 100%;
+    color: white;
 }
 
 /* ======================================== END OF COLORS AND HEADING PRESETS ======================================== */
