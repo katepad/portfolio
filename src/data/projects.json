@@ -1,0 +1,58 @@
+[
+    {
+        "project_name": "Logit-19",
+        "project_duration": "October 2020",
+        "project_desc": "Logit‑19 is a 3rd‑place winning project created for a Women’s Hackathon Event. Designed to support teens during COVID‑19, it focuses on easing feelings of isolation and promoting positive mental health. Through emotion‑tracking log books, calming activities, and practical tips, Logit‑19 provides a supportive space for teens to express themselves and navigate challenging times in a healthy way.",
+        "project_tools": ["JavaScript"],
+        "project_image": "../assets/logit19.png",
+        "project_link": "https://studio.code.org/projects/applab/rzNlJmSWZyq8gqbQeFEdaw7dvhvXfDvwgcFeLq-jefM"
+    },
+    {
+        "project_name": "BLISS",
+        "project_duration": "April 2021",
+        "project_desc": "BLISS is a 1st‑place winning game created for a Women’s Hackathon Event, featuring entirely original hand‑drawn pixel art. Players follow the journey of a single piece of litter and see how one careless action cascades through ecosystems. From Seagull Betty to Gerald the Fish, the game reveals how small acts of neglect can accumulate into real harm for the many creatures who share our world.",
+        "project_tools": ["Snap!"],
+        "project_image": "../assets/bliss.png",
+        "project_link": "https://snap.berkeley.edu/snap/snap.html#present:Username=pandaants&ProjectName=Bliss%20The%20Game"
+    },
+    {
+        "project_name": "Data File Manipulation",
+        "project_duration": "January 2024 - February 2024",
+        "project_desc": "This program allows the user to display, sort, analyze, and manipulate information from a data file.",
+        "project_tools": ["C++"],
+        "project_image": "../assets/dataManipulation.png",
+        "project_link": "https://github.com/katepad/data-manipulation"
+    },
+    {
+        "project_name": "Server Client Simulation",
+        "project_duration": "November 2023",
+        "project_desc": "This program simulates a simple UDP connection between a client, a local server, and two other servers. It displays the steps taken to establish that connection between each server.",
+        "project_tools": ["Python"],
+        "project_image": "../assets/serverclient.png",
+        "project_link": "https://github.com/katepad/client-server"
+    },
+    {
+        "project_name": "Study Space Finder",
+        "project_duration": "March 2024 - April 2024",
+        "project_desc": "Study Space Finder enables users to discover local study spots. It offers study spot listings and personalized dashboards.",
+        "project_tools": ["HTML", "CSS", "JavaScript", "SQL", "PHP"],
+        "project_image": "../assets/studyspacefinder.png",
+        "project_link": "https://github.com/JaclynW/StudySpaceFinder"
+    },
+    {
+        "project_name": "Ecouture",
+        "project_duration": "September 2024 - December 2024",
+        "project_desc": "Ecouture is a sustainable fashion software project aimed at promoting eco-friendly wardrobe management and consumer awareness about the environmental impact of fashion, particularly fast fashion. It allows users to log their clothing items, providing detailed sustainability analytics based on material, brand, and more. With features like a closet database and a community forum, Ecouture helps young users make informed fashion choices.",
+        "project_tools": ["Java", "SQL"],
+        "project_image": "../assets/ecouture.png",
+        "project_link": "https://github.com/katepad/ecouture"
+    },
+    {
+        "project_name": "Harmony Hacks Club Website",
+        "project_duration": "February 2025 - March 2025",
+        "project_desc": "In the Fall of 2024, I had the opportunity to co-found a club at CSUSM called Harmony Hacks. Harmony Hacks is an organization built to empower women in Computer Science and provide mentorship opportunites for young women considering the field. As part of my Senior Capstone project, my team and I had the opportunity to create the founding website that acts as an informational hub of resources for Harmony Hacks members and interested parties.",
+        "project_tools": ["React", "Typescript", "CSS"],
+        "project_image": "../assets/harmonyHacks.png",
+        "project_link": "https://harmonyhackscsusm.github.io/website/"
+    }
+]

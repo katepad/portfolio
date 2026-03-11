@@ -5,12 +5,13 @@
 .home-section {
     display: flex;
     background-image: url("../assets/homeBg.png");
-    background-repeat: no-repeat; /* Prevents the image from tiling */
-    background-size: cover;       /* Scales the image to cover the entire element while preserving its aspect ratio */
-    background-position: center;  /* Centers the image within the element */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 
-    justify-content: center;
-    padding: 5rem 0rem 0rem 0rem;
+    justify-content: flex-start;
+    padding-left: 12rem;
+    padding-top: 5rem;
 }
 
 .home-section .intro-div {
@@ -24,7 +25,6 @@
     width: 45%;
     height: 500px;
 
-    background: linear-gradient(135deg,rgba(204, 51, 102, 0.3) 75%, rgba(255, 204, 204, 0.3) 100%);
     background: linear-gradient(135deg,rgba(69, 110, 26, 0.3) 0%, rgba(139, 158, 106, 0.3) 100%);
     backdrop-filter: blur(0.25rem);
     -webkit-backdrop-filter: blur(10px); /* for older browser compatibility */
@@ -44,7 +44,7 @@
     box-shadow: 0 6px 40px rgba(0, 0, 0, 0.2);
 }
 
-.home-section .links-div {
+.home-section .intro-div .links-div {
     width: 12rem;
     display: flex;
     flex-direction: row;
@@ -65,6 +65,7 @@
 }
 
 /* ======================================== HOME SECTIONS END ======================================== */
+
 
 
 /* ======================================== HOME IMAGES ======================================== */
@@ -90,6 +91,7 @@
 /* ======================================== HOME IMAGES END ======================================== */
 
 
+
 /* ======================================= HOME LINKS ======================================== */
 
 .links-div a {
@@ -105,6 +107,7 @@
 /* ======================================= HOME LINKS END ======================================== */
 
 
+
 /* ======================================= Responsive ======================================= */
 
 @media (max-width: 1420px) {
@@ -112,6 +115,7 @@
     .home-section {
         flex-direction: column;
         align-items: center;
+        padding-left: 0rem;
     }
 
     .home-section .intro-div{

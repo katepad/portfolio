@@ -3,6 +3,7 @@ import '../styles/global.css';
 import '../styles/home.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import SpotlightCard from './SpotlightCard';
 
 const Home: React.FC = () => {
   return (
@@ -13,7 +14,8 @@ const Home: React.FC = () => {
         <img className="home-img" src="src/assets/pfp.png" />
       </div>
 
-      <div className="intro-div">
+      <SpotlightCard className="custom-spotlight-card intro-div" spotlightColor="#ffeded80">
+
         <h1> I AM <span className="recolor"> KATE PADUGANAO</span>,</h1>
         <h2> A Front-End Software Engineer with a Bachelor of Science in Computer Information Systems. </h2>
         <p> I am passionate about creating intuitive, visually engaging web, multimedia, and data visualization experiences. Skilled in translating ideas into cohesive digital branding and user‑focused design. </p>
@@ -25,7 +27,7 @@ const Home: React.FC = () => {
             <FontAwesomeIcon icon={faLinkedin} size="3x" />
           </a>
         </div>
-      </div>
+      </SpotlightCard>
 
       {/* flowers */}
       <div className="lily-img-1 tilt-1">

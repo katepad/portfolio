@@ -1,0 +1,37 @@
+.skills-section {
+    padding: 2rem;
+    background-color: var(--primary-color-light);
+}
+
+.skills-section h1 {
+    color: var(--primary-color);
+}
+
+.skills-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.stack-section {
+    margin: 2rem 1rem;
+}
+
+.stack-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 1rem;
+
+    justify-content: center;
+    width: 60%;
+}
+
+/* ======================================= Responsive ======================================= */
+
+@media (max-width: 1420px) {
+
+    .stack-container {
+        width: 100%;
+    }
+
+}
